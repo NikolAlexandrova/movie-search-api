@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100 text-gray-900">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Search</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center min-h-screen px-4">
+  <div class="w-full max-w-xl space-y-6">
+
+    <!-- Title -->
+    <h1 class="text-3xl font-bold text-center">🎬 Movie Search</h1>
+
+    <!-- Search Form -->
+    <form id="searchForm" class="flex gap-2" aria-label="Movie search form">
+      <input id="searchInput" type="text" placeholder="Search a movie…"
+        class="flex-1 px-4 py-2 rounded border border-gray-300" aria-label="Search input" />
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        aria-label="Search button">
+        Search
+      </button>
+    </form>
+
+    <!-- Recent Searches -->
+    <div class="mt-4" aria-live="polite">
+      <h3 class="text-lg font-semibold mb-2">Recent Searches</h3>
+      <div id="recent" class="flex flex-wrap gap-2 text-blue-600 cursor-pointer text-sm"></div>
+    </div>
+
+    <!-- Search Results -->
+    <div id="results" class="space-y-4"></div>
+
+    <!-- Movie Details (hidden until "More Info" is clicked) -->
+    <div id="details" class="space-y-4"></div>
+
+  </div>
+
+  <!-- JS Logic -->
+  <script src="/script.js"></script>
+</body>
+
+</html>
