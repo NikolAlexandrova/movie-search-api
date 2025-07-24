@@ -30,15 +30,14 @@ This is a lightweight, backend-powered movie search app using Node.js and the OM
 - **Testing** thoroughly covers `/search` endpoint, error cases, and mock scenarios
 
 ## 🚀 Getting Started
-
-1. **Clone the repo** and install dependencies:
-   git clone <repo-url>
-   cd movie-search-api
-   npm install
-   **Add your .env file** with OMDB_API_KEY=your_api_key_here
-   **Run tests**
-   npm test
-   **Start the server** 
-   npm run dev
-   **Visit**
-   http://localhost:3000
+**Clone the repo** and install dependencies:
+- git clone <repo-url>
+- cd movie-search-api
+- npm install
+- **Add your .env file** with OMDB_API_KEY=your_api_key_here
+- **Run tests:**
+- npm test
+- **Start the server:** 
+- npm run dev
+- **Visit:**
+- http://localhost:3000
